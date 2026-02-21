@@ -7,7 +7,7 @@ import { provideRouter, withRouterConfig } from '@angular/router';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { provideNativeDateAdapter, MAT_DATE_LOCALE } from '@angular/material/core';
 
-import { routes } from './app.routes';
+import { routes } from '@app/app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
