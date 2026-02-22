@@ -105,7 +105,7 @@ All components are **standalone** with `ChangeDetectionStrategy.OnPush`.
 
 ### Persistence
 
-`localStorage` under the key `hw-munters-books`. A seeded set of books is loaded on first visit if storage is empty.
+`localStorage` under the key `books`. A seeded set of books is loaded on first visit if storage is empty.
 
 ---
 
