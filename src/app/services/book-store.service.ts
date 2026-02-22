@@ -74,7 +74,7 @@ const SEED_BOOKS: Book[] = [
     },
 ];
 
-const STORAGE_KEY = 'hw-munters-books';
+const STORAGE_KEY = 'books';
 const BATCH_SIZE = 10;
 const RESULTS_PER_PAGE = 20;
 
