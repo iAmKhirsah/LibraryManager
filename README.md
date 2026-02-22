@@ -126,5 +126,4 @@ All components are **standalone** with `ChangeDetectionStrategy.OnPush`.
 
 - **No backend** — state is `localStorage` only; multiple tabs or users will not sync
 - **Google Books quota** — the app queries without an API key; rate limits will silently return empty results
-- **No authentication** — any visitor can modify the library
 - **Test coverage** — `BookStoreService` is fully covered; component-level tests are not included
