@@ -80,7 +80,10 @@ interface SortOption {
         <div class="stats-box">
           <p class="stats">
             @if (store.viewMode() === ViewMode.INVENTORY) {
-              <strong>{{ store.filteredBooks().length }}</strong> books
+              Showing <strong>{{ store.visibleBooks().length }}</strong> of <strong>{{ store.filteredBooks().length }}</strong> books
+              @if (store.filteredBooks().length !== store.books().length) {
+                <span class="muted">(from {{ store.books().length }} total)</span>
+              }
             } @else {
               <strong>{{ store.visibleBooks().length }}</strong> results
             }
@@ -195,6 +198,12 @@ interface SortOption {
       background: var(--bg-app);
       border-radius: 999px;
       border: 1px solid var(--border);
+    }
+
+    .muted {
+      color: var(--text-muted, #888);
+      font-size: 0.85rem;
+      margin-left: 4px;
     }
 
     .loading-bar {
